@@ -1,0 +1,51 @@
+'.html, .erb':
+  'HTML List':
+    'prefix': 'list'
+    'body': """
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    """
+
+  'Boostrap Form':
+    'prefix': 'bform'
+    'body': """
+      <div class="form-group">
+        <%= f.label :$1, class: "col-sm-2 control-label" %>
+        <div class="col-sm-10">
+          <%= f.text_field :$1, class: "form-control", placeholder: "" %>
+        </div>
+      </div>
+    """
+
+  'bootstrapRow':
+    'prefix': 'brow'
+    'body': """
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+          </div>
+        </div>
+      </div>
+    """
+
+  'erb':
+    'prefix': '%'
+    'body': '<%= $1 %>'
+
+
+  'jQuery ajax':
+    'prefix': '$.ajax'
+    'body': """
+    $.ajax({
+      url: "/",
+      method: "POST",
+      data: {
+        id : id
+      },
+      dataType: "json"
+    });
+    """
